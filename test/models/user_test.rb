@@ -32,6 +32,7 @@ class UserTest < ActiveSupport::TestCase
 		user = User.new(first_name: 'Jason', last_name: 'Stanza', email: 'jason2@tester.com')
 		user.password = user.password_confirmation = 'asdfasdf'
 		user.profile_name = "My Profile With Spaces"
+
 		assert !user.save
 		assert !user.errors[:profile_name].empty?
 		assert user.errors[:profile_name].include?("Must be formatted correctly.")
@@ -40,7 +41,6 @@ class UserTest < ActiveSupport::TestCase
 	test "a user can have a correctly formatted profile name" do
 		user = User.new(first_name: 'Jason', last_name: 'Stanza', email: 'jason2@tester.com')
 		user.password = user.password_confirmation = 'asdfasdf'
-
 		user.profile_name = 'jason_seifer1'
 		assert user.valid?
 	end
