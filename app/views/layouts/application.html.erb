@@ -33,10 +33,10 @@
 			</div>
 		</div>
 		<div class="container">
-			<% if flash[:notice] %>
-				<div class="alert alert-warning alert-dismissable">
+			<% flash.each do |type, message| %>
+				<div class="alert <%= flash_class type %> alert-dismissable">
 					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-					<%= flash[:notice] %>
+					<%= message %>
 				</div>
 			<% end %>
 
