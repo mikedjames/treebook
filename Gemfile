@@ -8,6 +8,11 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+# Use pgsql for production
+group :production do 
+	gem 'pg'
+end
+
 # Use Devise for user authentication
 gem 'devise'
 gem 'simple_form'
