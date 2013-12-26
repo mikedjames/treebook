@@ -3,15 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as our local database during dev and testing
-group :development, :test do 
-	gem 'sqlite3'
-end
-
-# Use pgsql for production
-group :production do 
-	gem 'pg'
-end
+gem 'sqlite3'
 
 # Use Devise for user authentication
 gem 'devise'
