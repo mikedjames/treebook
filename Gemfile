@@ -11,6 +11,7 @@ gem 'simple_form'
 
 group :test do 
 	gem 'shoulda'
+	gem 'factory_girl_rails'
 end
 
 # Use SCSS for stylesheets
@@ -38,6 +39,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'state_machine'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

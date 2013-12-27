@@ -1,8 +1,9 @@
 jason:
     first_name: "Jason"
     last_name: "Seifer"
-    email: "jasonseifer@test.com"
+    email: "mikedjames@gmail.com"
     profile_name: "jasonseifer"
+    encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
 
 jim:
     first_name: "Jim"
@@ -13,5 +14,5 @@ jim:
 mike:
     first_name: "Mike"
     last_name: "The Frog"
-    email: "mikethefrog@treehouse.com"
+    email: "mikedjames@me.com"
     profile_name: "mikethefrog"
